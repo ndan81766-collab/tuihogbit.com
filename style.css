@@ -9,8 +9,10 @@
 .header{
   flex: 15%;
   background-color: lightgray;
-  
+  background: url("alo/IMG_6442.jpeg") center / 100%;
+  aspect-ratio: 6 / 1;
 }
+
 .menu{
   flex: 5%;
   background-color: darkgray;
