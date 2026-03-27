@@ -58,11 +58,4 @@
   font-weight: bold;
   font-family: Arial; 
 }
-.anchorToCircle {
-display: block;
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: darkred 2px ridge;
-background-color: orangered;
-}
+
