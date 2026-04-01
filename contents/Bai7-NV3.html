@@ -4,15 +4,15 @@
     <title>Phản hồi</title>
   </head>
   <body> 
-    <p id="dk"> </p>
-    <script>
+  <p id="dk"> </p>
+  <script>
       let params = new URLSearchParams(window.location.search);
       let ten = params.get("txtTen");
       let yk = params.get("txtComment");
       document.getElementById("dk").innerHTLML = "Cảm ơn bạn" + ten + " đã góp ý " + "<br><br> Chúng tôi xin ghi nhận ý kiến của bạn như sau :<br>" + yk;        
-    </script>
-     <form action="Bai7-NV2.html">
-          <h3>Cảm ơn bạn đã phản hồi</h3>
+  </script>
+   <form action="Bai7-NV2.html">
+       <h3>Cảm ơn bạn đã phản hồi</h3>
   <input type= "submit" name= "cmd" value="Quay lại">
    </form>
   </body>
