@@ -1,19 +1,23 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Phản hồi</title>
-  </head>
-  <body>
-   <p id="dk"> </p>
-   <script>
-      let params = new URLSearchParams(window.location.search);
-      let ten = params.get("txtTen");
-      let yk = params.get("txtComment");
-      document.getElementById("dk").innerHTLML = "Cảm ơn bạn" + ten + " đã góp ý " + "<br><br> Chúng tôi xin ghi nhận ý kiến của bạn như sau :<br>" + yk;        
-    </script>
-   <form action="Bai7-NV2.html">
-       <h3>Cảm ơn bạn đã phản hồi</h3>
-     <input type= "submit" name= "cmd" value="Quay lại">
-    </form>
- </body>
+<body>
+  <p id="kq"> </p>
+  <form action="Bai7-NV2.html">
+    <input type="submit" name="cmd" value="Back">
+  </form>
+
+  <script>
+    let params = new URLSearchParams(window.location.search);
+    let ten = params.get("txtTen");
+    let yk = params.get("txtComment");
+    
+    let displayText = "Cảm ơn bạn " + (ten ? ten : "bạn") 
+      + " đã góp ý" + "<br><br> Chúng tôi xin ghi nhận ý kiến của bạn như sau:<br>";
+    
+    if (yk) {
+      displayText += yk;
+    }
+    
+    document.getElementById("kq").innerHTML = displayText;
+  </script>
+</body>
 </html>
