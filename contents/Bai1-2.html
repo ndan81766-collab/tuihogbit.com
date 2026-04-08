@@ -9,5 +9,13 @@
     <p>Chúng tôi xin ghi nhận đăng kí của bạn</p>
     <input type= "submit" name= "cmd" value="Quay lại">
    </form>
+
+    <script>
+    let params = new URLSearchParams(window.location.search);
+    let ten = params.get("txtTen");
+    let displayText = "Cảm ơn bạn " + (ten ? ten : "bạn") 
+      + " đã góp ý" + "<br><br> Chúng tôi xin ghi nhận đăng kí của bạn <br>";
+    document.getElementById("kq").innerHTML = displayText;
+  </script>
   </body>
 </html>
